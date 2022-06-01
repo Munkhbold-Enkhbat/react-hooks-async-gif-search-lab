@@ -4,10 +4,10 @@ function GifList ({ gifs }) {
   console.log("Gifs:", gifs);
 
   const renderGifs = () => {
-    return gifs.data.map(gif => {
+    return gifs.map(gif => {
       return (
         <li key={gif.id}>
-          <img src={gif.url} alt="Your gif is coming..."/>
+          <img src={gif} alt="Your gif is coming..."/>
         </li>
       )
     })
