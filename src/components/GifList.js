@@ -14,7 +14,7 @@ function GifList ({ gifs }) {
   }
 
   return (
-    <ul>
+    <ul className="col-md-10">
       {renderGifs()}
     </ul>
   )

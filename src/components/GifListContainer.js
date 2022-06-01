@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import GifList from "./GifList";
+import GifSearch from "./GifSearch";
 
 function GifListContainer() {
 
@@ -18,8 +19,13 @@ function GifListContainer() {
       })
   }, [])
 
-  // console.log("Gifs:", gifs);
-  return <GifList gifs={gifs}/>
+  return (
+    <>
+      <GifList gifs={gifs}/>
+      <GifSearch setGifs={setGifs}/>
+    </>
+    
+  )
 }
 
 export default GifListContainer
